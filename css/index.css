@@ -83,6 +83,10 @@ button {
 
 @media (max-width: 575.98px) {
 
+    body {
+        overflow-y: hidden;
+    }
+
     .wrapper {
         margin: 30px;
     }

@@ -16,12 +16,12 @@ function a() {
         });
         
 
-        let chore = "<h1>Here's What You Can Do</h1>";
+        let chore = "<h1>Here's What You Can Do</h1><hr>";
             chore += `<ul>
                         <li class="todo">${whatToDo.activity}</li>
-                        <li>This activity falls under ${whatToDo.type}</li>
-                        <li>The probability of you doing this is ${whatToDo.accessibility}, prove me wrong?</li>
-                        <li>Number of participants for this is ${whatToDo.participants}</li>
+                        <li>This activity falls under <span>${whatToDo.type}</span></li>
+                        <li>The probability of you doing this is <span>${whatToDo.accessibility}</span>, prove me wrong?</li>
+                        <li>Number of participants is <span>${whatToDo.participants}</span></li>
                     </ul>`
         
         activity.innerHTML = chore;

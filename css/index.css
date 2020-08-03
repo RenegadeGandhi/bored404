@@ -1,30 +1,178 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.big-wrapper {
+    height: 100vh;
+    background-image: url(/img/hero.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-wrapper {
+    background-color: #b8eb8460;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
 }
 
 .wrapper {
+    border: 1px thin #b7eb84;
+    border-radius: 10px;
+    background-color: #b7eb84c9;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 50px;
+    padding: 30px;
 }
 
 h1 {
-    color: black;
-    font-size: 32px;
+    color: #fff;
+    font-size: 30px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: whitesmoke;
+    border-bottom: 1px solid grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #99A686;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: 500;
+}
+
+ul {
+    padding-left: 0;
 }
 
 li {
     list-style: none;
+    margin: 10px;
+    font-size: 20px;
 }
 
 .todo {
     font-weight: bold;
+    font-size: 22px;
+}
+
+span {
+    font-weight: 700;
+}
+
+button {
+    padding: 10px 35px !important;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500 !important;
+    color: #333 !important;
+}
+
+@media (max-width: 575.98px) {
+
+    .wrapper {
+        margin: 30px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        padding: 8px 10px;
+        font-weight: 500;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    .todo {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    button {
+        padding: 10px 25px !important;
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 500 !important;
+        color: #333 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .wrapper {
+        margin: 30px;
+    }
+
+    .content {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    h2 {
+        padding: 8px 10px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .todo {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    button {
+        padding: 8px 18px !important;
+        font-size: 14px;
+        margin-top: 7px;
+    }
 }
